@@ -1,0 +1,93 @@
+.about,
+.courses,
+.admissions {
+  padding: 2rem 0;
+}
+
+.about h1,
+.courses h1,
+.admissions h1 {
+  margin: auto;
+  width: max-content;
+  font-size: 4rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.about h1::after,
+.courses h1::after,
+.admissions h1::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  width: 70%;
+  margin: auto;
+  height: 4px;
+  background: black;
+}
+.content_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+  flex-wrap: wrap;
+}
+
+.content_div li {
+  flex-basis: 30rem;
+  padding: 4rem 1rem;
+  margin: 1rem;
+}
+.content_head {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.content_subhead {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Courses */
+
+.courses_btn {
+  width: max-content;
+  margin: auto;
+}
+
+.courses_btn button {
+  padding: 10px 25px;
+  background: transparent;
+  color: #43a67b;
+  border-radius: 5px;
+  border: 1.4px solid #43a67b;
+  font-size: 1.4rem;
+  transition: 0.2s all;
+}
+
+.courses_btn:hover button {
+  background: #43a67b;
+  color: white;
+  /* transform: scale(1.1); */
+}
+.courses .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.courses .container li {
+  flex-basis: 30rem;
+  /* height: 30rem; */
+  padding: 1rem 1rem 3rem 1rem;
+  margin: 1rem;
+  border: 1.4px solid rgb(159, 159, 159);
+  border-radius: 15px;
+  color: #43a67b;
+}
+.courses .container .content_subhead {
+  margin: 2rem 0;
+}
