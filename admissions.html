@@ -3,26 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Courses</title>
+    <title>Admissions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="about.css" />
   </head>
   <body>
     <nav>
       <!-- Nav Logo -->
       <div class="logo_div">
         <img src="Images/logo.png" alt="logo" width="50px" />
-        <p>Admissions</p>
+        <p>Bella University</p>
       </div>
 
       <!-- Nav Links -->
-      <ul>
+      <ul class="nav_links">
         <li>
           <a href="index.html">Home</a>
         </li>
@@ -64,7 +66,43 @@
     </nav>
 
     <section class="admissions">
-      <h1>Admissions</h1>
+      <h1>Admission 2024-2025</h1>
+
+      <div class="admissions_container">
+        <div class="admissions_img_div">
+          <img width="100%" src="Images/admissions.jpg" alt="" />
+        </div>
+        <div class="admissions_form_div">
+          <form action="#">
+            <h2>Get in touch</h2>
+            <p class="form_subhead">
+              Fill out the form below, and we'll get back
+              <br class="responsive" />to you as soon as possible.
+            </p>
+
+            <div class="input_fields">
+              <label for="name">Name</label><br />
+              <input id="name" type="text" />
+
+              <br /><br />
+
+              <label for="email">Email</label><br />
+              <input id="email" type="email" />
+
+              <br /><br />
+
+              <label for="number">Number</label><br />
+              <input id="number" type="number" />
+
+              <br /><br />
+
+              <div class="form_btn">
+                <button>Sumbit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -134,5 +172,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

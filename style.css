@@ -29,9 +29,25 @@ ul {
   list-style: none;
 }
 
+h1 {
+  width: fit-content;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .highlight_text {
   color: #43a67b;
 }
+
+.responsive_nav {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -164,8 +180,37 @@ footer {
   .responsive {
     display: none;
   }
-  nav ul,
-  nav button {
+
+  .nav_links_responsive_hamburger {
+    display: block;
+    padding: 5rem 0;
+    font-size: 2rem;
+  }
+
+  .nav_links_responsive_hamburger li {
+    margin: 1rem 0;
+  }
+
+  .nav_responsive_hamburger {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: white;
+  }
+
+  .hamburger_res {
+    position: absolute;
+    top: 23.7px;
+    right: 2rem;
+  }
+  nav button,
+  nav ul {
     display: none;
   }
 
@@ -179,6 +224,10 @@ footer {
 
   footer {
     flex-direction: column;
+  }
+
+  footer .footer_copyright {
+    margin-top: 1rem;
   }
 
   header {
@@ -197,10 +246,26 @@ footer {
   header .hero_head_div h1 {
     font-size: 3rem;
   }
+  .admissions_container {
+    flex-direction: column;
+  }
+  .admissions_container .admissions_form_div {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  form input {
+    width: 100%;
+  }
+  .admissions_container {
+    padding: 1rem 2rem;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   header .hero_head_div h1 {
     font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 2.5rem !important;
   }
 }
